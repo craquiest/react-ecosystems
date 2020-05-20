@@ -54,3 +54,5 @@ code src/todos/NewTodoForm.js
 touch src/todos/NewTodoForm.css
 ```
 9. Putting it together: display components in App
+
+10. Styling the app so far
