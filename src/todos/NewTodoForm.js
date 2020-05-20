@@ -16,3 +16,5 @@ const NewTodoForm = () => {
     </div>
   );
 };
+
+export default NewTodoForm;
