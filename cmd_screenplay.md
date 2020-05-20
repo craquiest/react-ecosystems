@@ -67,3 +67,8 @@ code src/store.js
 ```
 code src/actions.js
 ```
+
+13. Creating Redux reducers
+```
+code src/reducers.js
+```
