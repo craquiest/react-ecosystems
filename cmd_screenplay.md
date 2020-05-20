@@ -56,3 +56,9 @@ touch src/todos/NewTodoForm.css
 9. Putting it together: display components in App
 
 10. Styling the app so far
+
+11. Adding Redux to a React app
+```
+npm install redux react-redux
+code src/store.js
+```
