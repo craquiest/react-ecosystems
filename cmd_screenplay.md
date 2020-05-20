@@ -21,3 +21,10 @@ code src/index.js
 code src/App.js src/App.css
 npm install react react-dom
 ```
+
+4. Building and serving with webpack
+```
+npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader
+code webpack.config.js
+npx webpack-dev-server --mode development
+```
