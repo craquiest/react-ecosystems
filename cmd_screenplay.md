@@ -72,3 +72,5 @@ code src/actions.js
 ```
 code src/reducers.js
 ```
+
+14. Connecting components to the store
