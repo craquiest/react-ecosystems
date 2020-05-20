@@ -28,3 +28,10 @@ npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-l
 code webpack.config.js
 npx webpack-dev-server --mode development
 ```
+
+5. Hot-reloading with react-hot-loader
+```
+npm install --save-dev react-hot-loader
+npm run dev
+npm run build
+```
