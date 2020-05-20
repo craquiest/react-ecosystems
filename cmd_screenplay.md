@@ -62,3 +62,8 @@ touch src/todos/NewTodoForm.css
 npm install redux react-redux
 code src/store.js
 ```
+
+12. Creating Redux actions
+```
+code src/actions.js
+```
