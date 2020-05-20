@@ -8,3 +8,8 @@ git init
 mkdir public src 
 code public/index.html
 ```
+
+2. ES6 support 
+```
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+code .babelrc
