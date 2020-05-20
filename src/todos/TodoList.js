@@ -1,4 +1,6 @@
 import React from 'react';
+import './TodoList.css';
+
 import TodoListItem from './TodoListItem';
 
 const TodoList = ({ todos }) => (

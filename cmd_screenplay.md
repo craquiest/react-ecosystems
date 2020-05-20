@@ -47,3 +47,10 @@ code src/todos/TodoList.css
 code src/todos/TodoListItem.js
 touch src/todos/TodoListItem.css
 ```
+
+8. Create the newTodoForm component
+```
+code src/todos/NewTodoForm.js
+touch src/todos/NewTodoForm.css
+```
+
