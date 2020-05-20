@@ -35,8 +35,15 @@ npm install --save-dev react-hot-loader
 npm run dev
 npm run build
 ```
+
 6. Create the todoList component
 ```
 code src/todos/TodoList.js
 code src/todos/TodoList.css
+```
+
+7. Create the todoList component
+```
+code src/todos/TodoListItem.js
+touch src/todos/TodoListItem.css
 ```
