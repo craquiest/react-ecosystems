@@ -76,3 +76,8 @@ code src/reducers.js
 14. Connecting components to the store 
 
 15. Running a React-Redux application: connecting TodoList to store
+
+16. Persisting the Redux store
+```
+npm install redux-persist
+```
