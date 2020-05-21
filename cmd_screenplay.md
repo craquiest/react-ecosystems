@@ -82,3 +82,6 @@ code src/reducers.js
 npm install redux-persist
 ```
 17. Redux DevTools Cmd+Shift+E 
+
+18. Add a Redux flow: the Mark as Completed button
+
