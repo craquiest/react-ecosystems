@@ -73,4 +73,6 @@ code src/actions.js
 code src/reducers.js
 ```
 
-14. Connecting components to the store
+14. Connecting components to the store 
+
+15. Running a React-Redux application: connecting TodoList to store
