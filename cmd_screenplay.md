@@ -81,3 +81,4 @@ code src/reducers.js
 ```
 npm install redux-persist
 ```
+17. Redux DevTools Cmd+Shift+E 
