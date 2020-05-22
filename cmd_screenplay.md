@@ -85,3 +85,10 @@ npm install redux-persist
 
 18. Add a Redux flow: the Mark as Completed button
 
+19. Add Redux-Thunk to application
+```
+npm install redux-thunk redux-devtools-extension @babel/runtime
+npm install --save-dev @babel/plugin-transform-runtime
+code .babelrc
+code src/store.js
+```
