@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { createTodo } from './actions';
+import { addTodoRequest } from './thunks';
 
 import './NewTodoForm.css';
 
@@ -41,7 +41,7 @@ const mapStateToProps = (state) => ({
 // dispatch is a function that allows comp to trigger actions that store will respond to
 //* the event handler basically
 const mapDispatchToProps = (dispatch) => ({
-  onCreatePressed: text => dispatch(createTodo(text))
+  onCreatePressed: text => dispatch(addTodoRequest(text))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewTodoForm);
