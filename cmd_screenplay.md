@@ -97,3 +97,20 @@ code src/store.js
 ```
 code src/todos/thunks.js
 ```
+
+21. the Todos API: setup local in-memory server
+In a different terminal:   
+```
+cd ..
+cp whole_originals/react-ecosystems-server.zip server.zip
+unzip server.zip -d . 
+rm -rf server.zip
+
+cd react-ecosystems-server
+npm install
+npm run start
+```
+then go back to original terminal  
+```
+cd ../react-ecosystems
+``` 
