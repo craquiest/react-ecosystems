@@ -1,6 +1,27 @@
 import { 
   CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED,
-} from './actions';
+  LOAD_TODOS_IN_PROGRESS,LOAD_TODOS_SUCCESS,LOAD_TODOS_FAILURE,
+  } from './actions';
+
+// Create a isLoading reducer
+export const isLoading = (state = false, action) => {
+  const { type } = action;
+
+  switch (type) {
+    case LOAD_TODOS_IN_PROGRESS: {
+      return true;
+    }
+
+    case LOAD_TODOS_SUCCESS:
+    case LOAD_TODOS_FAILURE: {
+      return false;
+    }
+    default:
+      return state;
+  }
+}
+
+
 
 // Create 'todos' reducer
 export const todos = (state = [], action) => {
