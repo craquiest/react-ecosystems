@@ -92,3 +92,8 @@ npm install --save-dev @babel/plugin-transform-runtime
 code .babelrc
 code src/store.js
 ```
+
+20. Creating a and testing a thunk that displays alert
+```
+code src/todos/thunks.js
+```
