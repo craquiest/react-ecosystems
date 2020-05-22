@@ -1,4 +1,6 @@
-import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED } from './actions';
+import { 
+  CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED,
+} from './actions';
 
 // Create 'todos' reducer
 export const todos = (state = [], action) => {
