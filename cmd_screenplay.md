@@ -118,3 +118,5 @@ cd ../react-ecosystems
 22. Add async thunks 
 
 23. Add another reducer isLoading to display loading status
+
+24. Refactoring the todos reducers 
