@@ -122,3 +122,5 @@ cd ../react-ecosystems
 24. Refactoring the todos reducers 
 
 25. Using thunks to create server resources
+
+26. Use thunks to delete server resources
