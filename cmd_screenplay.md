@@ -124,3 +124,5 @@ cd ../react-ecosystems
 25. Using thunks to create server resources
 
 26. Use thunks to delete server resources
+
+27. Use thunks to update server resources

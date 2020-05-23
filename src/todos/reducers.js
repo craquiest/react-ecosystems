@@ -40,16 +40,11 @@ export const todos = (state = [], action) => {
     }
 
     case MARK_TODO_AS_COMPLETED: {
-      const { text } = payload;
-      //Lamine way 
-      /* const changedTodo = {
-        text,
-        isCompleted: true
-      };
-      return state.filter(todo => (todo.text !== text)).concat(changedTodo); */
+      const { todo : updatedTodo } = payload;
+      //return state with only update id changed
       return state.map(todo => {
-        if (todo.text === text) {
-          return { ...todo, isCompleted: true };
+        if (todo.id === updatedTodo.id) {
+          return updatedTodo;
         }
         return todo;
       });

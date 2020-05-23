@@ -1,6 +1,6 @@
 import { 
   loadTodosInProgress, loadTodosSuccess, loadTodosFailure, 
-  createTodo,removeTodo 
+  createTodo,removeTodo, markTodoAsCompleted 
 } from './actions';
 
 export const loadTodos = () => (async (dispatch, getState) => {
@@ -39,7 +39,6 @@ export const addTodoRequest = (text) => async dispatch => {
 
 export const removeTodoRequest = (id) => async dispatch => {
   try {
-    // const body = JSON.stringify({ text });
     const response = await fetch(`http://localhost:8080/todos/${id}`, {
       method: 'delete',
     });
@@ -51,6 +50,18 @@ export const removeTodoRequest = (id) => async dispatch => {
   }
 };
 
+export const markTodoAsCompletedRequest = (id) => async dispatch => {
+  try {
+    const response = await fetch(`http://localhost:8080/todos/${id}/completed`, {
+      method: 'post',
+    });
+    const updatedTodo = await response.json();
+    dispatch(markTodoAsCompleted(updatedTodo));
+
+  } catch (e) {
+    dispatch(displayAlert(e));
+  }
+};
 
 export const displayAlert = (text) => (() => {
   alert(`You clicked on: ${text}`);
