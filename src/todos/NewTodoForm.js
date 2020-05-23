@@ -14,34 +14,38 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
         type="text"
         placeholder="Type your new todo here"
         value={inputValue}
-        onChange={e => setInputValue(e.target.value)} />
+        onChange={(e) => setInputValue(e.target.value)}
+      />
       <button
         className="new-todo-button"
-        onClick={ () => {
-          const isDuplicatedText = (todos.some(todo => todo.text === inputValue));
+        onClick={() => {
+          const isDuplicatedText = todos.some(
+            (todo) => todo.text === inputValue
+          );
           if (!isDuplicatedText) {
             onCreatePressed(inputValue);
             setInputValue('');
           }
         }}
-      >Create Todo</button>
+      >
+        Create Todo
+      </button>
     </div>
   );
 };
-
 
 // Properties of object returned passed to our component as props
 // Return the piece of the state that our component needs
 //* the data
 const mapStateToProps = (state) => ({
-  todos: state.todos
+  todos: state.todos,
 });
 
 // Properties of object returned passed to our component as props
 // dispatch is a function that allows comp to trigger actions that store will respond to
 //* the event handler basically
 const mapDispatchToProps = (dispatch) => ({
-  onCreatePressed: text => dispatch(addTodoRequest(text))
+  onCreatePressed: (text) => dispatch(addTodoRequest(text)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewTodoForm);
