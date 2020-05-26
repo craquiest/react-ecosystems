@@ -165,3 +165,5 @@ code README.md
 ```
 npm install reselect
 ```
+
+32. Add selectors to Components: complete & incomplete TodoList
