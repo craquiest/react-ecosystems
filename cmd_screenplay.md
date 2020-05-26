@@ -188,3 +188,11 @@ git rm src/App.css
 35. Pass props to styled-components
 
 36. Extend styled-components
+
+37. Test React ecosystems
+
+```
+npm install --save-dev mocha chai
+npm install --save-dev @babel/register
+mkdir src/todos/tests
+```
