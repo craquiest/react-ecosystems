@@ -209,3 +209,9 @@ code src/todos/tests/reducers.test.js
 npm install --save-dev sinon node-fetch fetch-mock
 code src/todos/tests/thunks.test.js
 ```
+
+40. Test selectors
+
+```
+code src/todos/tests/selectors.test.js
+```
