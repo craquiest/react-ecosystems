@@ -186,3 +186,5 @@ git rm src/App.css
 ```
 
 35. Pass props to styled-components
+
+36. Extend styled-components
