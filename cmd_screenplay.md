@@ -153,3 +153,9 @@ cd ../react-ecosystems
 ```
 code src/todos/selectors.js
 ```
+
+30. Add README to project
+
+```
+code README.md
+```
