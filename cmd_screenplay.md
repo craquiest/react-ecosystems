@@ -167,3 +167,9 @@ npm install reselect
 ```
 
 32. Add selectors to Components: complete & incomplete TodoList
+
+33. Create a styled component
+
+```
+npm install styled-components
+```
