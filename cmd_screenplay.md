@@ -147,3 +147,9 @@ cd ../react-ecosystems
 27. Use thunks to update server resources
 
 28. Reformat all JS files with Prettier - Code formatter
+
+29. Create selectors and refactor
+
+```
+code src/todos/selectors.js
+```

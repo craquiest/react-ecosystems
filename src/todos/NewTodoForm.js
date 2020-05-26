@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { getTodos } from './selectors';
 import { addTodoRequest } from './thunks';
 
 import './NewTodoForm.css';
@@ -38,7 +39,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
 // Return the piece of the state that our component needs
 //* the data
 const mapStateToProps = (state) => ({
-  todos: state.todos,
+  todos: getTodos(state),
 });
 
 // Properties of object returned passed to our component as props
