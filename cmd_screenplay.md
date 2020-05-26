@@ -159,3 +159,9 @@ code src/todos/selectors.js
 ```
 code README.md
 ```
+
+31. Combine selectors with Reselect
+
+```
+npm install reselect
+```
