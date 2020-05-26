@@ -173,3 +173,14 @@ npm install reselect
 ```
 npm install styled-components
 ```
+
+34. Convert CSS modules to styled-components  
+    After editing js files to incorporate styled-components:
+
+```
+git rm src/todos/TodoList.css
+git rm src/todos/TodoListItem.css
+git rm src/todos/NewTodoForm.css
+git rm src/App.css
+
+```

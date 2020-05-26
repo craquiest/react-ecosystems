@@ -15,14 +15,11 @@ import {
   markTodoAsCompletedRequest,
   displayAlert,
 } from './thunks';
-import './TodoList.css';
 
-/*
-const BigRedText = styled.div`
-  font-size: 48px;
-  color: #ff0000;
+const ListWrapper = styled.div`
+  max-width: 700px;
+  margin: auto;
 `;
-*/
 
 const TodoList = ({
   completedTodos,
@@ -39,8 +36,7 @@ const TodoList = ({
   const loadingMessage = <div>Loading todos...</div>;
 
   const content = (
-    <div className="list-wrapper">
-      {/* <BigRedText>Hello! I'm a styled component!</BigRedText> */}
+    <ListWrapper>
       <NewTodoForm />
       <h3>Incomplete:</h3>
       {incompleteTodos.map((todo) => (
@@ -57,10 +53,9 @@ const TodoList = ({
           todo={todo}
           onRemovePressed={onRemovePressed}
           onCompletedPressed={onCompletedPressed}
-          // onCompletedPressed={onDisplayAlertClicked}
         />
       ))}
-    </div>
+    </ListWrapper>
   );
   return isLoading ? loadingMessage : content;
 };
@@ -75,7 +70,6 @@ const mapDispatchToProps = (dispatch) => ({
   startLoadingTodos: () => dispatch(loadTodos()),
   onRemovePressed: (id) => dispatch(removeTodoRequest(id)),
   onCompletedPressed: (id) => dispatch(markTodoAsCompletedRequest(id)),
-  // onDisplayAlertClicked: (text) => dispatch(displayAlert(text)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
