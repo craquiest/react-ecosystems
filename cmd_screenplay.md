@@ -215,3 +215,5 @@ code src/todos/tests/thunks.test.js
 ```
 code src/todos/tests/selectors.test.js
 ```
+
+41. Test vanilla selectors: Lamine

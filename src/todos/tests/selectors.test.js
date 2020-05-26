@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { getCompletedTodos } from '../selectors.js';
+import { getCompletedTodos, getTodos, getTodosLoading } from '../selectors.js';
 
 describe('The getCompletedTodos selector', () => {
   it('Returns only the completed todos', () => {
@@ -34,5 +34,38 @@ describe('The getCompletedTodos selector', () => {
 
     // Now test
     expect(actual).to.deep.equal(expected);
+  });
+});
+
+describe('The getTodos selector', () => {
+  const fakeTodos = [
+    {
+      text: 'Say hello',
+      isCompleted: true,
+    },
+    {
+      text: 'Say goodbye',
+      isCompleted: false,
+    },
+    {
+      text: 'Climb Mount Everest',
+      isCompleted: false,
+    },
+  ];
+
+  const fakeState = {
+    todos: {
+      isLoading: false,
+      data: fakeTodos,
+    },
+  };
+  it('Returns all todos data', () => {
+    const todoArray = getTodos(fakeState);
+    expect(todoArray).to.deep.equal(fakeTodos);
+  });
+
+  it('Returns the isLoading status correctly', () => {
+    const actual = getTodosLoading(fakeState);
+    expect(actual).to.equal(false);
   });
 });
