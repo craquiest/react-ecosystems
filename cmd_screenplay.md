@@ -196,3 +196,9 @@ npm install --save-dev mocha chai
 npm install --save-dev @babel/register
 mkdir src/todos/tests
 ```
+
+38. Test reducers
+
+```
+code src/todos/tests/reducers.test.js
+```
