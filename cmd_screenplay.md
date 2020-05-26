@@ -202,3 +202,10 @@ mkdir src/todos/tests
 ```
 code src/todos/tests/reducers.test.js
 ```
+
+39. Test thunks
+
+```
+npm install --save-dev sinon node-fetch fetch-mock
+code src/todos/tests/thunks.test.js
+```
