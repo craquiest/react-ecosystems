@@ -217,3 +217,9 @@ code src/todos/tests/selectors.test.js
 ```
 
 41. Test vanilla selectors: Lamine
+
+42. Test styled-components: custom logic inside component, not style itself
+
+```
+code src/todos/tests/TodoListItem.test.js
+```

@@ -10,13 +10,17 @@ const TodoItemContainer = styled.div`
   box-shadow: 0 4px 8px grey;
 `;
 
+export const getBorderStyleForDate = (startingDate, currentDate) => {
+  //check if older than 3 days
+  return startingDate > new Date(currentDate - 24 * 60 * 60 * 1000 * 3)
+    ? 'none'
+    : '2px solid red';
+};
+
 const TodoItemContainerWithWarning = styled(TodoItemContainer)`
   // extends the TodoItemContainer styled-comp
   border-bottom: ${(props) =>
-    //check if older than 3 days
-    new Date(props.createdAt) > new Date(Date.now() - 24 * 60 * 60 * 1000 * 3)
-      ? 'none'
-      : '2px solid red'};
+    getBorderStyleForDate(new Date(props.createdAt), Date.now())};
 `;
 
 const ButtonsContainer = styled.div`
