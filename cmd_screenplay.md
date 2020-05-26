@@ -184,3 +184,5 @@ git rm src/todos/NewTodoForm.css
 git rm src/App.css
 
 ```
+
+35. Pass props to styled-components
